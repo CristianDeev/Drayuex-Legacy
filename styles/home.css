@@ -1,0 +1,140 @@
+body {
+  min-height: 100vh;
+  background: #f7f7f7;
+  color: #111111;
+}
+
+/* Hero principal */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1.5fr);
+  gap: 3rem;
+  align-items: center;
+  padding: 1rem clamp(1.5rem, 4vw, 3.5rem) 3rem;
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Texto del hero */
+.hero-text h1 {
+  font-size: clamp(2.3rem, 4.5vw, 3.2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  margin-bottom: 1.2rem;
+}
+
+.hero-text p {
+  max-width: 520px;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* CARD NEGRA DEL PRODUCTO DESTACADO */
+.hero-card {
+  border-radius: 1.8rem;
+  padding: 1.4rem;
+  background: #0b0b0b;        /* Negro carbón */
+  box-shadow: 0 26px 70px rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #1d1d1d; /* Borde gris oscuro */
+  color: #ffffff;            /* Texto blanco */
+}
+
+/* TAGS */
+.hero-card-tag {
+  position: absolute;
+  top: 1.1rem;
+  left: 1.3rem;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  opacity: 0.9;
+  color: #eaeaea;
+}
+
+.hero-card-badge {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.3rem;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #ffffff40;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.05);
+  color: #ffffff;
+}
+
+/* Interior de la card */
+.hero-card-main {
+  margin-top: 2.5rem;
+  border-radius: 1.5rem;
+  height: 260px;
+  background: #111111;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 1.5rem 1.7rem;
+  border: 1px solid #1f1f1f;
+  box-shadow: inset 0 0 30px rgba(0,0,0,0.4);
+}
+
+.hero-card-main-text h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.95;
+  color: #ffffff;
+}
+
+.hero-card-main-text p {
+  font-size: 0.8rem;
+  opacity: 0.75;
+  max-width: 220px;
+  color: #dcdcdc;
+}
+
+.hero-card-main-price span {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  opacity: 0.7;
+  margin-bottom: 0.2rem;
+  color: #dcdcdc;
+}
+
+.hero-card-main-price strong {
+  font-size: 1.4rem;
+  color: white;
+}
+
+.hero-card-footer {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  opacity: 0.8;
+  color: #eaeaea;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card-main {
+    height: 220px;
+  }
+}
