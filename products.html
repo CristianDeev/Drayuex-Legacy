@@ -5,6 +5,10 @@
   <title>Drayuex Legacy - Colección</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/products.css">
 </head>
@@ -15,32 +19,46 @@
   <nav>
     <a href="home.html">Inicio</a>
     <a href="products.html">Colección</a>
+    <a href="products.html?cat=hombre">Hombre</a>
+    <a href="products.html?cat=mujer">Mujer</a>
+    <a href="products.html?cat=accesorios">Accesorios</a>
   </nav>
 </header>
 
 <section id="products" class="products">
 
   <div class="products-header">
-    <h2>Drop 01 · Drayuex Legacy</h2>
-    <p>
-      Seis piezas seleccionadas con estética dark / street nocturno.
-    </p>
+    <div>
+      <h2>Drop 01 · Drayuex Legacy</h2>
+      <p>Seis piezas seleccionadas con estética dark / street nocturno.</p>
+    </div>
+    <span class="products-count">6 piezas</span>
   </div>
 
   <div class="products-grid">
 
-    <!-- Cada producto es un card -->
     <article class="product-card">
       <div class="product-image-wrapper">
-        <img src="https://via.placeholder.com/400x500?text=Drayuex+Hoodie" class="product-image">
+        <!--
+          IMAGEN: reemplaza el src por la URL de tu foto real.
+          Tamaño recomendado: 800x1000px, formato JPG o WEBP.
+          Ejemplo: src="images/hoodie-phantom.jpg"
+        -->
+        <img
+          src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=800&q=80"
+          class="product-image"
+          alt="Hoodie Phantom"
+          loading="lazy"
+        >
         <span class="product-tag">Nuevo</span>
+        <div class="product-image-overlay"></div>
       </div>
       <div class="product-body">
         <h3 class="product-name">Hoodie Phantom</h3>
         <p class="product-desc">Hoodie oversize negro con arte blanco glitch.</p>
         <div class="product-meta">
           <span class="product-price">$xxx.xxx</span>
-          <span class="product-status">Limitado</span>
+          <span class="product-status product-status--limited">Limitado</span>
         </div>
         <button class="product-btn">Ver producto</button>
       </div>
@@ -48,8 +66,18 @@
 
     <article class="product-card">
       <div class="product-image-wrapper">
-        <img src="https://via.placeholder.com/400x500?text=Drayuex+Sweater" class="product-image">
+        <!--
+          IMAGEN: reemplaza el src por tu foto.
+          Ejemplo: src="images/crewneck-nightfall.jpg"
+        -->
+        <img
+          src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&q=80"
+          class="product-image"
+          alt="Crewneck Nightfall"
+          loading="lazy"
+        >
         <span class="product-tag">Essential</span>
+        <div class="product-image-overlay"></div>
       </div>
       <div class="product-body">
         <h3 class="product-name">Crewneck Nightfall</h3>
@@ -64,15 +92,24 @@
 
     <article class="product-card">
       <div class="product-image-wrapper">
-        <img src="https://via.placeholder.com/400x500?text=Drayuex+Tee" class="product-image">
+        <!--
+          IMAGEN: src="images/tee-void.jpg"
+        -->
+        <img
+          src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?w=800&q=80"
+          class="product-image"
+          alt="Tee Void"
+          loading="lazy"
+        >
         <span class="product-tag">Drop</span>
+        <div class="product-image-overlay"></div>
       </div>
       <div class="product-body">
         <h3 class="product-name">Tee Void</h3>
         <p class="product-desc">Camiseta pesada con impresión full-back.</p>
         <div class="product-meta">
           <span class="product-price">$xxx.xxx</span>
-          <span class="product-status">Pocas unidades</span>
+          <span class="product-status product-status--low">Pocas unidades</span>
         </div>
         <button class="product-btn">Ver producto</button>
       </div>
@@ -80,8 +117,17 @@
 
     <article class="product-card">
       <div class="product-image-wrapper">
-        <img src="https://via.placeholder.com/400x500?text=Drayuex+Pants" class="product-image">
+        <!--
+          IMAGEN: src="images/cargo-shadow.jpg"
+        -->
+        <img
+          src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80"
+          class="product-image"
+          alt="Cargo Shadow"
+          loading="lazy"
+        >
         <span class="product-tag">Street</span>
+        <div class="product-image-overlay"></div>
       </div>
       <div class="product-body">
         <h3 class="product-name">Cargo Shadow</h3>
@@ -96,8 +142,17 @@
 
     <article class="product-card">
       <div class="product-image-wrapper">
-        <img src="https://via.placeholder.com/400x500?text=Drayuex+Cap" class="product-image">
+        <!--
+          IMAGEN: src="images/cap-eclipse.jpg"
+        -->
+        <img
+          src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800&q=80"
+          class="product-image"
+          alt="Cap Eclipse"
+          loading="lazy"
+        >
         <span class="product-tag">Accesorio</span>
+        <div class="product-image-overlay"></div>
       </div>
       <div class="product-body">
         <h3 class="product-name">Cap Eclipse</h3>
@@ -112,24 +167,44 @@
 
     <article class="product-card">
       <div class="product-image-wrapper">
-        <img src="https://via.placeholder.com/400x500?text=Drayuex+Mask" class="product-image">
+        <!--
+          IMAGEN: src="images/mask-revenant.jpg"
+        -->
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+          class="product-image"
+          alt="Mask Revenant"
+          loading="lazy"
+        >
         <span class="product-tag">Highlight</span>
+        <div class="product-image-overlay"></div>
       </div>
       <div class="product-body">
         <h3 class="product-name">Mask Revenant</h3>
         <p class="product-desc">Pasamontañas negro minimal con detalle frontal.</p>
         <div class="product-meta">
           <span class="product-price">$xx.xxx</span>
-          <span class="product-status">Casi agotado</span>
+          <span class="product-status product-status--low">Casi agotado</span>
         </div>
         <button class="product-btn">Ver producto</button>
       </div>
     </article>
 
   </div>
-
 </section>
 
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo">Drayuex Legacy</div>
+  <p class="footer-copy">© 2026 Drayuex Legacy · Todos los derechos reservados</p>
+  <div class="footer-links">
+    <a href="#">Términos</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Contacto</a>
+  </div>
+</footer>
+
+<script src="js/toast.js"></script>
 <script src="js/products.js"></script>
 </body>
 </html>
