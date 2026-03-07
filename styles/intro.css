@@ -120,9 +120,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* ── ANIMACIÓN ────────────────────────────── */
-/* La opacity: 0 inicial + forwards hace que cada elemento
-   aparezca escalonado sin parpadear */
+
 @keyframes fadeUp {
   from {
     opacity: 0;
