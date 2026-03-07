@@ -746,3 +746,14 @@ body {
   .social-card span { display: none; }
   .social-card { padding: 0.9rem 1.2rem; }
 }
+.hero-card-image{
+  display:flex;
+  justify-content:center;
+  margin-bottom:20px;
+}
+
+.hero-card-image img{
+  width:220px;
+  height:auto;
+  object-fit:contain;
+}
